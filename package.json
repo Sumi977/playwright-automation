@@ -1,0 +1,25 @@
+{
+  "name": "playwrightautomationendtoend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "webTests": "npx playwright test --grep @Web",
+    "SafariNewConfig": "npx playwright test --config playwright.config1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@azure/identity": "^4.13.0",
+    "@azure/playwright": "^1.1.1",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.6",
+    "allure-playwright": "^3.4.5",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
