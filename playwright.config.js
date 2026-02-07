@@ -12,7 +12,7 @@ const config = ({
   retries: 2,
   timeout: 30 * 1000,
   expect: {
-    timeout: 40 * 1000,
+    timeout: 30 * 1000,
   },
   reporter: 'html',
   //reporter: [["line"], ["allure-playwright"]],
@@ -26,6 +26,8 @@ const config = ({
     headless: true,
     screenshot: 'retain-on-failure',
     trace: 'retain-on-failure',
+    navigationTimeout: 10000,
+    actionTimeout: 15000
 
 
 
